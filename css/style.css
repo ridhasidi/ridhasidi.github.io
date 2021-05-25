@@ -1,0 +1,199 @@
+body {
+  font-family: Proxima Nova, Lexend Deca;
+}
+
+/* nav starts */
+nav {
+  background-color: #134f5c;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+h1 {
+  color: #ff9900;
+}
+
+h1 span {
+  color: #ffffff;
+}
+
+nav ul a:hover {
+  background-color: #ff9900;
+  color: #ffffff;
+}
+/* nav ends */
+
+/* jumbotron starts */
+.jumbotron {
+  background-image: url("../images/river_cambridgegulfandestuary.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+div h3 {
+  color: #ffffff;
+  display: none;
+}
+/* jumbotron ends */
+
+/* content starts */
+img {
+  margin: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 5%;
+  width: 90%;
+}
+
+/* social media starts */
+.social-menu ul {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.social-menu ul li {
+  list-style: none;
+  display: inline;
+  margin: 0;
+}
+.social-menu ul li .fa {
+  font-size: 1.5rem;
+}
+.fa-facebook {
+  color: #3b5999;
+}
+.fa-twitter {
+  color: #55acee;
+}
+.fa-instagram {
+  color: #bd2bb1;
+}
+.fa-envelope-o {
+  color: #bb001b;
+}
+.social-menu ul li .fa:hover {
+  color: #ff9900;
+}
+
+/* social media ends */
+
+.col-lg-3 {
+  text-align: right;
+}
+
+.col-lg-5,
+.port-title,
+.port-content {
+  padding-left: 0.7rem;
+}
+
+.col-lg-7 {
+  padding-left: 2rem;
+}
+.col-lg-10 {
+  padding: 1rem;
+}
+
+/* tabel starts */
+table {
+  width: 100%;
+}
+
+table a {
+  color: #ff9900;
+  margin: 0px;
+  padding: 0px;
+}
+
+th {
+  background-color: #dfdfdf;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.year {
+  text-align: right;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+td {
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+}
+
+tr {
+  border: solid #a0a0a0;
+  border-width: thin;
+}
+
+summary {
+  list-style-type: none;
+  background-color: #f1f1f1;
+  padding: 0.5em;
+  margin: 0.5em;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  transition-duration: 0.3s;
+}
+
+summary:hover {
+  background-color: #dfdfdf;
+}
+/* table ends */
+
+.portfolio-item {
+  margin-top: 1rem;
+  padding: 1.5rem;
+  padding-right: 2.5rem;
+  border: solid #a0a0a0;
+  border-width: thin;
+  border-radius: 6px;
+}
+
+section div a h2 {
+  color: #ffffff;
+  background-color: #134f5c;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+.btn {
+  color: #ffffff;
+  background-color: #ff9900;
+  align-content: flex-end;
+}
+/* content ends */
+
+/* footer starts */
+footer {
+  background-color: #134f5c;
+  color: #ffffff;
+  text-align: right;
+  padding-right: 2.5rem;
+}
+
+footer p a {
+  margin: 0px;
+  padding: 0px;
+}
+
+footer p a:hover {
+  color: #ff9900;
+}
+/* footer ends */
