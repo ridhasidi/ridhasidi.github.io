@@ -45,7 +45,7 @@ div h3 {
 /* jumbotron ends */
 
 /* content starts */
-img {
+.profile {
   margin: 0.5rem;
   margin-right: 0.5rem;
   border-radius: 5%;
@@ -154,11 +154,16 @@ summary:hover {
 
 .portfolio-item {
   margin-top: 1rem;
-  padding: 1.5rem;
-  padding-right: 2.5rem;
+  padding: 1rem;
   border: solid #a0a0a0;
   border-width: thin;
   border-radius: 6px;
+  text-align: center;
+}
+
+.portfolio-item h4,
+.portfolio-item p {
+  text-align: justify;
 }
 
 section div a h2 {
@@ -182,6 +187,7 @@ section {
 
 /* footer starts */
 footer {
+  font-size: 0.8rem;
   background-color: #134f5c;
   color: #ffffff;
   text-align: right;
@@ -210,13 +216,7 @@ footer p a:hover {
     text-align: center;
     margin-bottom: 2rem;
   }
-  .portfolio-item {
-    text-align: center;
-  }
-  .portfolio-item h4,
-  .portfolio-item p {
-    text-align: justify;
-  }
+
   footer {
     text-align: center;
     padding-right: 0;
