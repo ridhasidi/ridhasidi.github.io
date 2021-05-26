@@ -49,14 +49,18 @@ div h3 {
   margin: 0.5rem;
   margin-right: 0.5rem;
   border-radius: 5%;
-  width: 90%;
+  width: 85%;
+}
+figcaption {
+  font-size: 0.8rem;
 }
 
 /* social media starts */
 .social-menu ul {
   padding: 0;
   margin: 0;
-  text-align: right;
+  text-align: center;
+  white-space: nowrap;
 }
 .social-menu ul li {
   list-style: none;
@@ -64,7 +68,7 @@ div h3 {
   margin: 0;
 }
 .social-menu ul li .fa {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .fa-facebook {
   color: #3b5999;
@@ -85,7 +89,7 @@ div h3 {
 /* social media ends */
 
 .col-lg-3 {
-  text-align: right;
+  text-align: center;
 }
 
 .col-lg-5,
@@ -99,10 +103,12 @@ div h3 {
 }
 .col-lg-10 {
   padding: 1rem;
+  padding-top: 0;
 }
 
 /* tabel starts */
 table {
+  margin-top: 1rem;
   width: 100%;
 }
 
@@ -129,10 +135,11 @@ th {
 td {
   padding-right: 1rem;
   padding-top: 0.5rem;
+  text-align: justify;
 }
 
 tr {
-  border: solid #a0a0a0;
+  border: solid #dfdfdf;
   border-width: thin;
 }
 
@@ -178,6 +185,12 @@ section {
   margin-bottom: 4rem;
 }
 
+form {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn {
   color: #ffffff;
   background-color: #ff9900;
@@ -209,11 +222,8 @@ footer p a:hover {
   body {
     font-family: Roboto, Helvetica;
   }
-  .col-lg-3 {
-    text-align: center;
-  }
+
   .social-menu ul {
-    text-align: center;
     margin-bottom: 2rem;
   }
 
