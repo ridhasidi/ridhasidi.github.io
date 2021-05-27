@@ -59,6 +59,7 @@ figcaption {
 .social-menu ul {
   padding: 0;
   margin: 0;
+  margin-bottom: 1rem;
   text-align: center;
   white-space: nowrap;
 }
@@ -126,9 +127,13 @@ table {
 }
 
 table a {
-  color: #ff9900;
+  color: #5076c9;
   margin: 0px;
   padding: 0px;
+}
+table a:hover {
+  color: rgb(255, 255, 255);
+  background-color: #ff9900;
 }
 
 th {
@@ -144,6 +149,9 @@ th {
   vertical-align: top;
   white-space: nowrap;
 }
+.col-lg-7 th h5 {
+  padding-bottom: 0;
+}
 
 td {
   padding-right: 1rem;
@@ -158,7 +166,7 @@ tr {
 
 summary {
   list-style-type: none;
-  background-color: #f1f1f1;
+  background-color: #dfdfdf;
   padding: 0.5em;
   margin: 0.5em;
   cursor: pointer;
@@ -168,7 +176,23 @@ summary {
 }
 
 summary:hover {
-  background-color: #dfdfdf;
+  background-color: #ff9900;
+  color: #ffffff;
+}
+details p {
+  padding-left: 1rem;
+  margin-bottom: 0rem;
+}
+details a {
+  color: #134f5c;
+  padding: 0.2rem;
+  margin: 0rem;
+}
+details a:hover {
+  background-color: #134f5c;
+  color: #ffffff;
+  padding: 0.2rem;
+  margin: 0rem;
 }
 /* table ends */
 
@@ -248,6 +272,10 @@ footer p a:hover {
   .col-lg-7 p {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .col-lg-7 th h5 {
+    padding-left: 0;
   }
 
   .social-menu ul {
