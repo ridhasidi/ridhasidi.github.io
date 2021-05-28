@@ -93,9 +93,7 @@ figcaption {
   text-align: center;
 }
 
-.col-lg-5,
-.port-title,
-.port-content {
+.col-lg-5 {
   padding-left: 0.7rem;
 }
 
@@ -104,80 +102,26 @@ figcaption {
   text-align: justify;
 }
 .col-lg-7 h5 {
-  padding-bottom: 0.8rem;
+  margin-bottom: 0rem;
 }
+
 .col-lg-7 a {
-  color: #5076c9;
+  color: #134f5c;
   margin: 0px;
   padding: 0px;
 }
 .col-lg-7 a:hover {
   color: rgb(255, 255, 255);
-  background-color: #ff9900;
+  background-color: #134f5c;
 }
 .col-lg-10 {
   padding: 1rem;
   padding-top: 0;
 }
 
-/* tabel starts */
-table {
-  margin-top: 1rem;
-  width: 100%;
-}
-
-table a {
-  color: #5076c9;
-  margin: 0px;
-  padding: 0px;
-}
-table a:hover {
-  color: rgb(255, 255, 255);
-  background-color: #ff9900;
-}
-
-th {
-  background-color: #dfdfdf;
-  padding-top: 0.3rem;
-  padding-bottom: 0.3rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-
-.year {
-  text-align: right;
-  vertical-align: top;
-  white-space: nowrap;
-}
-.col-lg-7 th h5 {
-  padding-bottom: 0;
-}
-
-td {
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  text-align: justify;
-}
-
-tr {
-  border: solid #dfdfdf;
-  border-width: thin;
-}
-
-summary {
-  list-style-type: none;
-  background-color: #dfdfdf;
-  padding: 0.5em;
-  margin: 0.5em;
-  cursor: pointer;
-  outline: none;
-  border-radius: 6px;
-  transition-duration: 0.3s;
-}
-
-summary:hover {
-  background-color: #ff9900;
-  color: #ffffff;
+/* summary starts */
+details {
+  text-align: left;
 }
 details p {
   padding-left: 1rem;
@@ -194,7 +138,26 @@ details a:hover {
   padding: 0.2rem;
   margin: 0rem;
 }
-/* table ends */
+summary {
+  list-style-type: none;
+  background-color: #dfdfdf;
+  padding: 0.5em;
+  margin: 0.5em;
+  cursor: pointer;
+  outline: none;
+  border-radius: 6px;
+  transition-duration: 0.3s;
+}
+
+summary:hover {
+  background-color: #ff9900;
+  color: #ffffff;
+}
+summary h5 {
+  margin: 0rem;
+}
+
+/* summary ends */
 
 .portfolio-item {
   margin-top: 1rem;
@@ -215,6 +178,10 @@ section div a h2 {
   background-color: #134f5c;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+section div a h2:hover {
+  background-color: #ff9900;
 }
 
 section {
@@ -270,12 +237,13 @@ footer p a:hover {
   }
 
   .col-lg-7 h5,
+  .col-lg-7 sup,
   .col-lg-7 p {
     padding-left: 1rem;
     padding-right: 1rem;
   }
 
-  .col-lg-7 th h5 {
+  .col-lg-7 details h5 {
     padding-left: 0;
   }
 
