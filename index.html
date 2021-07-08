@@ -30,7 +30,7 @@
       <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
         <div class="container-fluid align-middle px-0">
           <a class="navbar-brand pb-0" href="index.html#home">
-            <h1 class="display-6 fs-3 fw-light"><span>ridhasidi</span></h1>
+            <h2 class="display-6 fs-3"><span>ridhasidi</span></h2>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,10 +55,10 @@
       </nav>
       <!-- nav ends here -->
       <!-- jumbotron starts here -->
-      <div class="jumbo p-5 px-sm-1 align-self-center">
-        <div class="container py-md-5 my-auto">
-          <div class="row justify-content-center py-5">
-            <div class="d-none d-md-block col-md-7 col-lg-7 pt-md-5 text-center">
+      <div class="jumbo py-5 px-4 p-sm-5 align-self-center">
+        <div class="container-fluid py-1 py-sm-5">
+          <div class="row justify-content-center py-md-5">
+            <div class="d-none d-md-block col-md-7 pt-md-5 text-center">
               <h1 class="text-white display-md-5 fw-bold"><span>Ridha Sidi</span> Mulyawan</h1>
               <h4 class="text-white pb-2">Earth Science and GIS Enthusiast</h4>
               <p class="text-white pb-4">ArcGIS, QGIS, Python, JavaScript, Google Earth Engine</p>
@@ -67,13 +67,14 @@
                 <a href="doc/CV_RidhaSidiMulyawan.pdf" class="btn downloadcv mx-3"><i class="fas fa-download"></i> Download CV</a>
               </div>
             </div>
-            <div class="col-md-5 col-lg-4 col-xl-3 pb-4 pt-md-5 text-center">
+            <div class="col-md-5 col-lg-4 col-xl-3 pb-4 pt-5 px-0 text-center">
               <img src="images/OutdoorProfile.jpg" class="profile" alt="outdoor profile photo" />
               <div class="d-block d-md-none">
                 <h1 class="text-white display-6 display-md-5 fw-bold"><span>Ridha Sidi</span> Mulyawan</h1>
                 <h5 class="text-white pb-2">Earth Science and GIS Enthusiast</h5>
                 <div class="pb-3">
-                  <a href="resume.html" class="btn aboutme mx-3"><i class="fas fa-user-circle"></i> Resume</a>
+                  <a href="resume.html" class="btn aboutme"><i class="fas fa-user-circle"></i> Resume</a>
+                  <a href="doc/CV_RidhaSidiMulyawan.pdf" class="btn downloadcv"><i class="fas fa-download"></i> Download CV</a>
                 </div>
               </div>
               <div class="social-menu d-none d-md-block">
@@ -141,7 +142,7 @@
           <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
             <div class="col p-4 pt-md-5">
               <div class="card h-100">
-                <img src="images/Suitability - Copy.jpg" class="card-img-top" alt="Palangkaraya 2015 Fire" />
+                <img src="images/Suitability.jpg" class="card-img-top" alt="Palangkaraya 2015 Fire" />
                 <div class="card-body">
                   <h5 class="card-title">Level of Services and Amenities Coverage in Jakarta</h5>
                   <p class="card-text d-none">Supervised classification on a Landsat-8 image in ArcGIS to detect active fire hotspot and evaluate fire hazard risk around Palangkaraya during 2015 Fire and Haze Crisis.</p>
@@ -209,7 +210,7 @@
             </div>
             <div class="col p-4 pt-md-5">
               <div class="card h-100">
-                <img src="images/Electoral Politics Assignment.jpg" class="card-img-top" alt="California Voting Result" />
+                <img src="images/electoralPolitics.jpg" class="card-img-top" alt="California Voting Result" />
                 <div class="card-body">
                   <h5 class="card-title">The Result of 2012 California Referendum on GMO Products</h5>
                   <p class="card-text d-none">Percentage of people in each county voting for passing the law which legally oblige farmers and producers to label their GMO products in California.</p>
@@ -307,7 +308,7 @@
             <form name="form-to-gsheet">
               <div class="mb-3">
                 <label for="InputName" class="form-label">Full Name</label>
-                <input name="name" type="text" class="form-control" id="InputName" aria-describedby="name" placeholder="Enter your name" required />
+                <input name="name" type="text" class="form-control" id="InputName" placeholder="Enter your name" required />
               </div>
               <div class="mb-3">
                 <label for="InputEmail" class="form-label">Email address</label>
@@ -351,8 +352,8 @@
     <!-- Footer ends here -->
 
     <!-- Leaflet webmap script -->
-    <script type="text/javascript" src="js/jktAccessibility.js"></script>
-    <script type="text/javascript">
+    <script src="js/jktAccessibility.js"></script>
+    <script>
       var mymap = L.map("mapid", { minZoom: 11, maxZoom: 14 });
 
       mymap.setView([-6.21, 106.83], 11);

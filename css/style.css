@@ -41,7 +41,7 @@ nav {
 nav div a h1 {
   font-family: Lexend deca;
 }
-nav div a h1 span,
+nav div a h2 span,
 h1.display-md-5 span {
   color: #ff9900;
 }
@@ -109,7 +109,8 @@ div.leaflet-control-layers-expanded {
 /* Section Title */
 .col-md-3 a,
 .col-md-4 a,
-.col-md-5 a {
+.col-md-5 a,
+.col-lg-6 a {
   text-decoration: none;
 }
 a h2.subtitle::before {
@@ -140,7 +141,7 @@ a h2.subtitle::after {
   transition: 0.5s ease-out;
 }
 a h2.subtitle:hover {
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   transform: scaleX(1.02);
 }
 
@@ -149,7 +150,7 @@ a h2.subtitle:hover {
   color: var(--clr-accent);
 }
 .contact .col-md-4 a h2:hover {
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   transform: scaleX(1.02);
   transition: 0.5s;
 }
@@ -159,13 +160,13 @@ a h2.subtitle:hover {
 .education,
 .skills,
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2), 0 0.375rem 1.25rem 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Card */
 .card:hover {
   transform: translate(0px, -10px);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 5px 20px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.19), 0 0.375rem 1.25rem 0.0625rem rgba(0, 0, 0, 0.4);
   transition: 1s;
 }
 h5.card-title {
@@ -184,7 +185,7 @@ h5.card-title {
   border: var(--clr-dark);
   background-color: var(--clr-bright);
   border-radius: 0.6rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25rem 0.5rem 0 rgba(0, 0, 0, 0.2);
 }
 #mapid,
 #map1,
@@ -195,27 +196,27 @@ h5.card-title {
   width: 100%;
 }
 .info {
-  padding: 6px 8px;
-  font: 14px/16px Arial, Helvetica, sans-serif;
+  padding: 0.375rem 0.5rem;
+  font: 0.875rem/1rem Arial, Helvetica, sans-serif;
   background: white;
   background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  box-shadow: 0 0 0.9375rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.3125rem;
 }
 .info h5 {
-  margin: 0 0 5px;
+  margin: 0 0 0.3125rem;
   color: #777;
 }
 .legend {
   text-align: left;
-  line-height: 18px;
+  line-height: 1.125rem;
   color: #555;
 }
 .legend i {
-  width: 18px;
-  height: 18px;
+  width: 1.125rem;
+  height: 1.125rem;
   float: left;
-  margin-right: 8px;
+  margin-right: 0.5rem;
   opacity: 0.7;
 }
 
@@ -233,7 +234,7 @@ footer {
   margin-right: 0.5rem;
   border-radius: 5%;
   width: 85%;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Buttons */
@@ -291,7 +292,7 @@ footer {
   color: #ffffff;
   border-color: transparent;
   transform: scale(1.1, 1.1);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.2);
   /* transition: 1.5s; */
 }
 .social-menu ul li a.fb:hover {
@@ -337,11 +338,11 @@ footer {
   padding: 1.25rem;
   background-color: var(--clr-dark);
   color: var(--clr-bright);
-  border-radius: 0px 0.9375rem 0.9375rem 0.9375rem;
+  border-radius: 0 0.9375rem 0.9375rem 0.9375rem;
   margin-bottom: 1.25rem;
 }
 .timeline ul li:hover {
-  box-shadow: 0 0 3px 1px var(--clr-dark-sec);
+  box-shadow: 0 0 0.1875 0.0625rem var(--clr-dark-sec);
 }
 /* The summary and details */
 summary {
@@ -354,7 +355,7 @@ details[open] summary ~ * {
 @keyframes sweep {
   0% {
     opacity: 0;
-    transform: translateY(-10px);
+    transform: translateY(-0.625rem);
   }
   100% {
     opacity: 1;
@@ -372,14 +373,14 @@ details[open] summary ~ * {
 .timeline ul li:last-child {
   margin-bottom: 0;
 }
-.timeline-content h1 {
+.timeline-content h3 {
   color: var(--clr-accent);
   font-weight: 500;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
 }
 .timeline-content p {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 0.3rem;
 }
@@ -400,36 +401,36 @@ details[open] summary ~ * {
   color: var(--clr-bright);
   font-size: 1rem;
   font-weight: 400;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
+  margin-bottom: 0.625rem;
+  letter-spacing: 0.125rem;
 }
 @media (max-width: 991px) {
   .timeline:before {
     content: "";
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -0.9375rem;
     transform: translateX(-50%);
-    width: 2px;
+    width: 0.125rem;
     height: 100%;
     background-color: var(--clr-dark-sec);
   }
   .timeline ul li::before {
     content: "";
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     border-radius: 50%;
     background-color: var(--clr-dark);
     transform: translateY(-100%);
-    left: -30px;
+    left: -1.5625rem;
   }
   .timeline-content ul li::before {
     content: none;
   }
   .timeline ul li:hover::before {
     background-color: var(--clr-accent);
-    box-shadow: 0 0 3px 2px var(--clr-accent-sec);
+    box-shadow: 0 0 0.1875rem 0.125rem var(--clr-accent-sec);
   }
 }
 @media only screen and (min-width: 992px) {
@@ -440,53 +441,53 @@ details[open] summary ~ * {
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 2px;
+    width: 0.125rem;
     height: 100%;
     background-color: var(--clr-dark-sec);
   }
   .timeline ul li {
     width: 50%;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
   }
   .timeline ul li:nth-child(odd) {
     float: left;
     clear: right;
-    transform: translateX(-30px);
-    border-radius: 20px 0px 20px 20px;
+    transform: translateX(-1.875rem);
+    border-radius: 1.25rem 0px 1.25rem 1.25rem;
   }
   .timeline ul li:nth-child(even) {
     float: right;
     clear: left;
-    transform: translateX(30px);
-    border-radius: 0px 20px 20px 20px;
+    transform: translateX(1.875rem);
+    border-radius: 0px 1.25rem 1.25rem 1.25rem;
   }
   /* The dots */
   .timeline ul li::before {
     content: "";
     position: absolute;
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
     border-radius: 50%;
     background-color: var(--clr-dark);
     top: 0px;
   }
   .timeline ul li:nth-child(odd)::before {
     transform: translate(50%, -50%);
-    right: -30px;
+    right: -1.875rem;
   }
   .timeline ul li:nth-child(even)::before {
     transform: translate(-50%, -50%);
-    left: -30px;
+    left: -1.875rem;
   }
   .timeline-content .date {
     color: var(--clr-dark);
     position: absolute;
-    top: -30px;
+    top: -1.875rem;
   }
   .timeline ul li:hover::before {
     background-color: var(--clr-accent);
-    box-shadow: 0 0 3px 2px var(--clr-accent-sec);
+    box-shadow: 0 0 0.1875rem 0.125rem var(--clr-accent-sec);
   }
   .timeline-content ul li:nth-child(odd),
   .timeline-content ul li:nth-child(even) {
