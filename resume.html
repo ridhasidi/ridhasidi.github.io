@@ -3,22 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <!-- my CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css" />
     <title>Resume — Ridha Sidi Mulyawan</title>
   </head>
   <body>
+    <!-- Header starts here -->
     <header>
-      <!-- navbar starts -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <h1>Ridha Sidi <span>MULYAWAN</span></h1>
+      <!-- nav starts here -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+        <div class="container-fluid align-middle px-0">
+          <a class="navbar-brand pb-0" href="index.html">
+            <h1 class="display-6 fs-3 fw-light"><span>ridhasidi</span></h1>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,180 +33,505 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>
+                <a class="nav-link" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="education.html">Education</a>
+                <a class="nav-link" href="projects.html">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="resume.html">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                <a class="nav-link active" aria-current="page" href="resume.html">Resume</a>
               </li>
               <li>
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="resume.html#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- navbar ends -->
-
-      <!-- jumbotron starts -->
-      <div class="jumbotron">
-        <h3>"Some Pretty Quotes Here"</h3>
+      <!-- nav ends here -->
+      <!-- jumbotron starts here -->
+      <div class="jumbo p-5 align-self-center">
+        <div class="container-fluid py-5">
+          <div class="row justify-content-center text-white pt-5">
+            <div class="col-md-5 col-lg-4 col-xl-3 pb-4 text-center">
+              <div>
+                <img src="images/RidhaSidiMulyawan.jpg" class="profile" alt="outdoor profile photo" />
+                <p>Earth Science and GIS Enthusiast</p>
+              </div>
+              <div class="social-menu">
+                <ul>
+                  <li class="mx-2">
+                    <a class="btn fb" href="https://www.facebook.com/mulyawan.ridhasidi"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li class="mx-2">
+                    <a class="btn tw" href="https://twitter.com/ridhasidi"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li class="mx-2">
+                    <a class="btn ig" href="https://www.instagram.com/ridhasidi/"><i class="fa fa-instagram"></i></a>
+                  </li>
+                  <li class="mx-2">
+                    <a class="btn mail" href="mailto:ridha.mulyawan@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <a href="doc/CV_RidhaSidiMulyawan.pdf" class="btn aboutme"><i class="fas fa-download"></i> Download CV</a>
+            </div>
+            <div class="col-md-6 col-lg-7">
+              <h1 class="text-white display-6 display-md-5 fw-bold text-center text-md-start"><span>Ridha Sidi</span> Mulyawan</h1>
+              <p>
+                Ridha Sidi Mulyawan is an earth science enthusiast who is currently looking for new opportunities. He has broad experience ranging from geodata (geochemistry, geophysics, lithology, etc) analysis to knowledge dissemination.
+                His background in earth science and his long-live passion in technology provide him the will to keep learning about GIS and its application.
+              </p>
+              <p>
+                His career started as a Research Assistant in a research center focusing on geothermal. He went to France to continue his study in 2018, but eventually decided to drop out after he realized the program was not focused on
+                geohazard and its mitigation efforts, but only on applied geophysics. After coming back from France, he worked as a site geologist to supervise tunnel boring for irrigation.
+              </p>
+              <p>
+                He believes using data during a hazard not only would help to streamline post-disaster relief efforts, but also to improve the pre-disaster mitigation efforts to reduce hazard risk in the future. His biggest dream is to be
+                able to work by applying his knowledge on GIS and remote sensing to build a self-sufficient and resilient community.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- jumbotron ends -->
+      <!-- jumbotron ends here -->
     </header>
+    <!-- Header ends here -->
 
-    <!-- About title starts-->
-    <section class="container no-gutters">
-      <div class="row justify-content-center">
-        <div class="col-lg-3">
-          <a href="resume.html"><h2>Resume</h2></a>
-        </div>
-        <div class="col-lg-7"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-3">
-          <img src="images/RidhaSidiMulyawan.jpg" class="profile" alt="profile photo" />
-          <h4>Ridha Sidi Mulyawan</h4>
-          <p>Earth Science and GIS Enthusiast</p>
-
-          <div class="social-menu">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/mulyawan.ridhasidi"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/ridhasidi"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/ridhasidi/"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="mailto:ridha.mulyawan@gmail.com"><i class="fa fa-envelope-o"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              <a href="doc/CV_RidhaSidiMulyawan.pdf"><button type="button" class="btn">Download CV</button></a>
-            </p>
+    <!-- Experience starts-->
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 align-self-center mb-3">
+            <a href="resume.html#experience"><h2 class="text-center fw-bold subtitle">Experience</h2></a>
           </div>
         </div>
-
-        <div class="col-lg-7">
-          <p>
-            Ridha Sidi Mulyawan is an earth science enthusiast who is currently looking for new opportunities. He has broad experience ranging from geodata (geochemistry, geophysics, lithology, etc) analysis to knowledge dissemination. His
-            background in earth science and his long-live passion in technology provide him the will to keep learning about GIS and its application.
-          </p>
-          <p>
-            His career started as a Research Assistant in a research center focusing on geothermal. His duties ranged from doing scientific geothermal research, designing pamphlets, leaflets, and books for workshops, facilitating workshops,
-            courses, meetings among stakeholders, etc.
-          </p>
-          <p>
-            He went to France to continue his study in 2018, but eventually decided to drop out after he realized the program was not focused on geohazard and its mitigation efforts, but only on applied geophysics. After coming back from
-            France, he worked as a site geologist to supervise tunnel boring for irrigation.
-          </p>
-          <p>
-            He always tries to gather some open-source geodata to help build a rapid assessment map each time natural hazard occurs. He believes using data during a hazard not only would help to streamline post-disaster relief efforts, but
-            also to improve the pre-disaster mitigation efforts to reduce hazard risk in the future. After learning about Google Earth Engine (GEE), he recently built algorithms that could automatically read and analyze Sentinel-1 radar
-            images to delineate the extent of the submerged area during flood.
-          </p>
-          <p>
-            His biggest dream is to be able to work by applying his knowledge on GIS and remote sensing to build a self-sufficient and resilient community. Please proceed to the <a href="portfolio.html">Portfolio page</a> to view some
-            samples of his works.
-          </p>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-3">
-          <a href="resume.html"><h2>Experience</h2></a>
-        </div>
-        <div class="col-lg-7"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-10">
-          <details open>
-            <summary>
-              <h5>Site Geologist</h5>
-              PT Karya Prima Cipta Utama | 2020-2021
-            </summary>
-            <ul>
-              <li>Produced slope and geological maps on project area using remote sensing and direct measurements of geological structures and lithology.</li>
-              <li>Produced a lithological log of cutting from each segment of the tunnel.</li>
-            </ul>
-          </details>
-          <details open>
-            <summary>
-              <h5>Research Assistant</h5>
-              Geothermal Research Centre (GRC), Faculty of Engineering, Universitas Gadjah Mada | 2015-2018
-            </summary>
-            <ul>
-              <li>Analysed wells cutting using X-Ray Diffraction from several geothermal fields in Indonesia.</li>
-              <li>
-                Identified of the permeability in Candradimuka Area, Dieng Geothermal Field, Central Java using remote sensing, direct measurement of geological structures and geothermal features on the field, and re-interpretation of
-                geophysical data (gravity anomaly and magnetotellurics).
-              </li>
-              <li>Facilitated geothermal workshops, meetings, and discussions with local community, local government, and academics within NZAID-CaRED Programme scheme.</li>
-              <li>
-                Created and developed a geothermal-themed website for North Sulawesi: <a href="https://panasbumi.sulutprov.go.id">panasbumi.sulutprov.go.id</a> (currently inactive) in cooperation with North Sulawesi Provincial Government in
-                August 2017.
-              </li>
-            </ul>
-          </details>
-          <details>
-            <summary>
-              <h5>Other Projects</h5>
-            </summary>
-            <ul>
-              <li>Analysis of Wells Cutting from Several Geothermal Fields in Indonesia.</li>
-              <li>Arrangement of Observation Wells in Semarang-Demak Groundwater Basin, Kudus Groundwater Basin, and Pekalongan-Pemalang Groundwater Basin, Central Java.</li>
-              <li>Geological Mapping of Bruno and Its Surrounding Areas, Purworejo, Central Java.</li>
-            </ul>
-          </details>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-3">
-          <a href="resume.html"><h2>Volunteer</h2></a>
-        </div>
-        <div class="col-lg-7"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-3">
-          <figure>
-            <img src="images/KKN_2013.jpg" class="profile" alt="KKN 2013 Activity" />
-            <figcaption>Aerobics routine with elementary school students</figcaption>
-          </figure>
-        </div>
-        <div class="col-lg-7">
-          <details open>
-            <summary>
-              <h5>Socio-cultural Empowerment Based on Local Wisdom to Create A Self-Sufficient Community</h5>
-              Jagoi Babang, West Kalimantan, Indonesia | 2013
-            </summary>
-            <ul>
-              <li>Observed and mapped out geothermal manifestation (hotspring) as a potential green and renewable energy resource.</li>
-              <li>Maintained and preserved water resource in indigenous forest.</li>
-              <li>Facilitated workshop on participation of community and individual to control malaria outbreak.</li>
-              <li>Facilitated workshop on drugs and sex education for youth.</li>
-            </ul>
-          </details>
+        <div class="timeline row justify-content-center mt-5">
+          <ul>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">2020-2021</h3>
+                <details open>
+                  <summary>
+                    <h1>Site Geologist</h1>
+                    <p>PT Karya Prima Cipta Utama</p>
+                  </summary>
+                  <ul>
+                    <li>Produced slope and geological maps on project area using remote sensing and direct measurements of geological structures and lithology.</li>
+                    <li>Produced a lithological log of cutting from each segment of the tunnel.</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">2015-2018</h3>
+                <details open>
+                  <summary>
+                    <h1>Research Assistant</h1>
+                    <p>Geothermal Research Centre (GRC), Faculty of Engineering, Universitas Gadjah Mada</p>
+                  </summary>
+                  <ul>
+                    <li>Analysed wells cutting using X-Ray Diffraction from several geothermal fields in Indonesia.</li>
+                    <li>
+                      Identified of the permeability in Candradimuka Area, Dieng Geothermal Field, Central Java using remote sensing, direct measurement of geological structures and geothermal features on the field, and re-interpretation of
+                      geophysical data (gravity anomaly and magnetotellurics).
+                    </li>
+                    <li>Facilitated geothermal workshops, meetings, and discussions with local community, local government, and academics within NZAID-CaRED Programme scheme.</li>
+                    <li>
+                      Created and developed a geothermal-themed website for North Sulawesi: <a href="https://panasbumi.sulutprov.go.id">panasbumi.sulutprov.go.id</a> (currently inactive) in cooperation with North Sulawesi Provincial
+                      Government in August 2017.
+                    </li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">2012-2015</h3>
+                <details>
+                  <summary>
+                    <h1>Other Projects</h1>
+                  </summary>
+                  <ul>
+                    <li>Analysis of Wells Cutting from Several Geothermal Fields in Indonesia.</li>
+                    <li>Arrangement of Observation Wells in Semarang-Demak Groundwater Basin, Kudus Groundwater Basin, and Pekalongan-Pemalang Groundwater Basin, Central Java.</li>
+                    <li>Geological Mapping of Bruno and Its Surrounding Areas, Purworejo, Central Java.</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">July-August 2013</h3>
+                <details>
+                  <summary>
+                    <h1>Volunteering</h1>
+                    <p>Socio-cultural Empowerment Based on Local Wisdom to Create A Self-Sufficient Community in Jagoi Babang, West Kalimantan, Indonesia</p>
+                  </summary>
+                  <ul>
+                    <li>Observed and mapped out geothermal manifestation (hotspring) as a potential green and renewable energy resource.</li>
+                    <li>Maintained and preserved water resource in indigenous forest.</li>
+                    <li>Facilitated workshop on participation of community and individual to control malaria outbreak.</li>
+                    <li>Facilitated workshop on drugs and sex education for youth.</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-    <!-- About content starts-->
+    <!-- Experience ends-->
 
-    <!-- footer starts -->
-    <footer class="fixed-bottom pt-2">
-      <p>Built by <a href="https://twitter.com/ridhasidi">@ridhasidi</a> &copy; 2021</p>
-    </footer>
-    <!-- footer ends -->
+    <!-- Education starts here -->
+    <section id="education" class="education">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 align-self-center mb-3">
+            <a href="resume.html#education"><h2 class="text-center fw-bold subtitle">Education</h2></a>
+          </div>
+        </div>
+        <div class="timeline row justify-content-center mt-5">
+          <ul>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">2010-2015</h3>
+                <details open>
+                  <summary>
+                    <h1>Sarjana Teknik (BAI) in Geological Engineering</h1>
+                    <p>Universitas Gadjah Mada | GPA: 3.26</p>
+                  </summary>
+                  <ul>
+                    <li>Remote Sensing and Geographic Information System (GIS)</li>
+                    <li>Risk Management and Disaster Mitigation</li>
+                    <li>Tectonics</li>
+                    <li>Volcanology</li>
+                    <li>Structural Geology</li>
+                    <li>Hydrology</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">2018 (not finished)</h3>
+                <details>
+                  <summary>
+                    <h1>Courses towards MSc in Science de la Terre et des Planètes, Environnement (Parcours Géorisques)</h1>
+                    <p>Université Grenoble-Alpes, France</p>
+                  </summary>
+                  <ul>
+                    <li>Seismology</li>
+                    <li>Geomechanics</li>
+                    <li>Geophysics</li>
+                    <li>Geographic Information System (GIS)</li>
+                    <li>Subsurface Modelling</li>
+                    <li>Induced Seismicity</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Education ends here -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Courses starts here -->
+    <section id="courses" class="courses">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 align-self-center mb-3">
+            <a href="resume.html#courses"><h2 class="text-center fw-bold subtitle">Courses</h2></a>
+          </div>
+        </div>
+        <div class="timeline row justify-content-center mt-5">
+          <ul>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">Coursera Specialization</h3>
+                <details>
+                  <summary>
+                    <h1>Python for Everybody</h1>
+                    <p>University of Michigan <a href="https://coursera.org/share/9e3d0c99aad98e8252ba552aef0fef0b">&#91;see certificate&#93;</a></p>
+                  </summary>
+                  <ul>
+                    <li>Programming for Everybody (Getting Started with Python)</li>
+                    <li>Python Data Structures</li>
+                    <li>Using Python to Access Web Data</li>
+                    <li>Using Databases with Python</li>
+                    <li>Capstone: Retrieving, Processing, and Visualizing Data with Python</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">Coursera Specialization</h3>
+                <details>
+                  <summary>
+                    <h1>Google IT Automation with Python</h1>
+                    <p>Google</p>
+                  </summary>
+                  <ul>
+                    <li>Crash Course on Python</li>
+                    <li>Using Python to Interact with the Operating System</li>
+                    <li>Introduction to Git and GitHub</li>
+                    <li>Troubleshooting and Debugging Techniques</li>
+                    <li>Configuration Management and the Cloud</li>
+                    <li>Automating Real-World Tasks with Python</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">Coursera Specialization</h3>
+                <details>
+                  <summary>
+                    <h1>Geographic Information Systems (GIS)</h1>
+                    <p>University of California, Davis</p>
+                  </summary>
+                  <ul>
+                    <li>
+                      Fundamentals of GIS<sup> <a href="https://coursera.org/share/449803d3c5744b211f455aaa88f8b35e">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>
+                      GIS Data Formats, Design and Quality<sup> <a href="https://coursera.org/share/1e0817c314f1c108b33ce9647c31842c">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>
+                      Geospatial and Environmental Analysis<sup> <a href="https://coursera.org/share/df4e27896f0493a25cb5df5e1eb06f45">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>
+                      Imagery, Automation, and Applications<sup> <a href="https://coursera.org/share/621bff5a2d81172f2cbab56524c87b77">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>Geospatial Analysis Project</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">Coursera Specialization</h3>
+                <details>
+                  <summary>
+                    <h1>GIS, Mapping, and Spatial Analysis</h1>
+                    <p>University of Toronto</p>
+                  </summary>
+                  <ul>
+                    <li>
+                      Introduction to GIS Mapping <sup><a href="https://coursera.org/share/72f1f15c2e1e27c91baf30ed70935ca5">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>
+                      GIS Data Acquisition and Map Design <sup><a href="https://coursera.org/share/94bcd4b62457052d22657a9ca64c3b29">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>Spatial Analysis and Satellite Imagery in a GIS</li>
+                    <li>GIS, Mapping, and Spatial Analysis Capstone</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">Coursera</h3>
+                <details>
+                  <summary>
+                    <h1>Geographical Information Systems</h1>
+                    <p>École Polytechnique Fédérale de Lausanne</p>
+                  </summary>
+                  <ul>
+                    <li>
+                      Geographical Information Systems - Part 1<sup> <a href="https://coursera.org/share/715d40ee93f7c5f47afbd9a16a588f3c">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>Systèmes d’Information Géographique - Partie 2</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">Coursera Specialization</h3>
+                <details>
+                  <summary>
+                    <h1>Web Design for Everybody: Basics of Web Development & Coding</h1>
+                    <p>University of Michigan</p>
+                  </summary>
+                  <ul>
+                    <li>
+                      Introduction to HTML5<sup> <a href="https://coursera.org/share/f901773b54d38f35805d664b361bb0a4">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>
+                      Introduction to CSS3<sup> <a href="https://coursera.org/share/ad600b3fa1241cc18aebc3717b435c26">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>
+                      Interactivity with JavaScript<sup> <a href="https://coursera.org/share/2e815b0625fc9383975ca4345db8a4be">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>
+                      Advanced Styling with Responsive Design<sup> <a href="https://coursera.org/share/1a10d2f775b7ee814f33111a404aa901">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>Web Design for Everybody Capstone</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-content">
+                <h3 class="date">Coursera Specialization</h3>
+                <details>
+                  <summary>
+                    <h1>Web Applications for Everybody</h1>
+                    <p>University of Michigan</p>
+                  </summary>
+                  <ul>
+                    <li>
+                      Building Web Applications in PHP<sup> <a href="https://coursera.org/share/eca235237f18f14bacf1d83c8fa9e488">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>
+                      Introduction to Structured Query Language (SQL)<sup> <a href="https://coursera.org/share/d518c5d1a1fe8da824aee522b03b2d65">&#91;see certificate&#93;</a></sup>
+                    </li>
+                    <li>Building Database Applications in PHP</li>
+                    <li>JavaScript, jQuery, and JSON</li>
+                  </ul>
+                </details>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="row justify-content-center">
+          <div class="col-md-4 col-lg-3">
+            <details open>
+              <summary class="py-1 px-3 mb-2">
+                <h5>GIS-related skills</h5>
+              </summary>
+              <ul class="pb-2">
+                <li>ArcGIS</li>
+                <li>QGIS</li>
+                <li>Google Earth Engine (GEE)</li>
+                <li>Sentinel Application Platform (SNAP)</li>
+              </ul>
+            </details>
+
+            <details open>
+              <summary class="py-1 px-3 mb-2">
+                <h5>Language skills</h5>
+              </summary>
+              <ul class="pb-2">
+                <li>Indonesian</li>
+                <li>English (IELTS: 7.0 in 2017)</li>
+                <li>French (DELF B2 in 2017)</li>
+                <li>Spanish</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary class="py-1 px-3 mb-2">
+                <h5>Programming skills</h5>
+              </summary>
+              <ul class="pb-2">
+                <li>Python</li>
+                <li>Matlab</li>
+                <li>Octave</li>
+              </ul>
+            </details>
+
+            <details>
+              <summary class="py-1 px-3 mb-2">
+                <h5>Web Design skills</h5>
+              </summary>
+              <ul class="pb-2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>Javascript</li>
+                <li>Leaflet</li>
+              </ul>
+            </details>
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <!-- Courses starts here -->
+
+    <!-- Contact starts here -->
+    <section id="contact" class="contact">
+      <div class="container text-white contact">
+        <div class="row justify-content-center">
+          <div class="col-md-4 col-lg-3 align-self-center mb-3">
+            <a href="resume.html#contact"> <h2 class="text-center fw-bold subtitle">Contact Me</h2></a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-lg-3 text-center">
+            <div>
+              <img src="images/DSC03632_ed.jpg" class="profile" alt="photo with sunglasses" />
+              <h4>Ridha Sidi Mulyawan</h4>
+              <p>Earth Science and GIS Enthusiast</p>
+            </div>
+            <div class="social-menu">
+              <ul>
+                <li>
+                  <a class="btn fb" href="https://www.facebook.com/mulyawan.ridhasidi"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a class="btn tw" href="https://twitter.com/ridhasidi"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="btn ig" href="https://www.instagram.com/ridhasidi/"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a class="btn mail" href="mailto:ridha.mulyawan@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact form starts here -->
+          <div class="col-md-5 px-5">
+            <form name="form-to-gsheet">
+              <div class="mb-3">
+                <label for="InputName" class="form-label">Full Name</label>
+                <input name="name" type="text" class="form-control" id="InputName" aria-describedby="name" placeholder="Enter your name" required />
+              </div>
+              <div class="mb-3">
+                <label for="InputEmail" class="form-label">Email address</label>
+                <input name="email" type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter your email" required />
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="Message" class="form-label">Message</label>
+                <textarea name="message" class="form-control" id="Message" rows="3" placeholder="Enter your message"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit aboutme">Submit</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+
+            <br />
+
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+              <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </symbol>
+            </svg>
+
+            <div class="alert alert-success alert-dismissible fade show d-none deliv-alert" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill" /></svg>
+              Your message has been delivered.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
+          <!-- Contact form ends here -->
+        </div>
+      </div>
+    </section>
+    <!-- Contact ends here -->
+
+    <!-- Footer starts here -->
+    <footer class="pt-3 text-center py-3">Copyright &copy; 2021 ridhasidi | All rights reserved</footer>
+    <!-- Footer ends here -->
   </body>
 </html>

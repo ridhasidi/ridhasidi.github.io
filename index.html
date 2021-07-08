@@ -3,22 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- Leaflet script -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
     <!-- my CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css" />
     <title>Ridha Sidi Mulyawan</title>
   </head>
-  <body>
+  <body id="home">
+    <!-- Header starts here -->
     <header>
-      <!-- navbar starts -->
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <h1>Ridha Sidi <span>MULYAWAN</span></h1>
+      <!-- nav starts here -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+        <div class="container-fluid align-middle px-0">
+          <a class="navbar-brand pb-0" href="index.html#home">
+            <h1 class="display-6 fs-3 fw-light"><span>ridhasidi</span></h1>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,92 +38,454 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" href="index.html">About</a>
+                <a class="nav-link active" aria-current="page" href="index.html#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="education.html">Education</a>
+                <a class="nav-link" href="projects.html">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="resume.html">Resume</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-              </li>
               <li>
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <!-- navbar ends -->
-
-      <!-- jumbotron starts -->
-      <div class="jumbotron">
-        <h3>"Some Pretty Quotes Here"</h3>
-      </div>
-      <!-- jumbotron ends -->
-    </header>
-
-    <!-- About title starts-->
-    <section class="container no-gutters">
-      <div class="row justify-content-center">
-        <div class="col-lg-3">
-          <a href="index.html"><h2>About</h2></a>
-        </div>
-        <div class="col-lg-7"></div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-lg-3">
-          <img src="images/OutdoorProfile.jpg" class="profile" alt="outdoor profile photo" />
-          <h4>Ridha Sidi Mulyawan</h4>
-          <p>Earth Science and GIS Enthusiast</p>
-          <div class="social-menu">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/mulyawan.ridhasidi"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="https://twitter.com/ridhasidi"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/ridhasidi/"><i class="fa fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="mailto:ridha.mulyawan@gmail.com"><i class="fa fa-envelope-o"></i></a>
-              </li>
-            </ul>
+      <!-- nav ends here -->
+      <!-- jumbotron starts here -->
+      <div class="jumbo p-5 px-sm-1 align-self-center">
+        <div class="container py-md-5 my-auto">
+          <div class="row justify-content-center py-5">
+            <div class="d-none d-md-block col-md-7 col-lg-7 pt-md-5 text-center">
+              <h1 class="text-white display-md-5 fw-bold"><span>Ridha Sidi</span> Mulyawan</h1>
+              <h4 class="text-white pb-2">Earth Science and GIS Enthusiast</h4>
+              <p class="text-white pb-4">ArcGIS, QGIS, Python, JavaScript, Google Earth Engine</p>
+              <div>
+                <a href="resume.html" class="btn aboutme mx-3"><i class="fas fa-user-circle"></i> Resume</a>
+                <a href="doc/CV_RidhaSidiMulyawan.pdf" class="btn downloadcv mx-3"><i class="fas fa-download"></i> Download CV</a>
+              </div>
+            </div>
+            <div class="col-md-5 col-lg-4 col-xl-3 pb-4 pt-md-5 text-center">
+              <img src="images/OutdoorProfile.jpg" class="profile" alt="outdoor profile photo" />
+              <div class="d-block d-md-none">
+                <h1 class="text-white display-6 display-md-5 fw-bold"><span>Ridha Sidi</span> Mulyawan</h1>
+                <h5 class="text-white pb-2">Earth Science and GIS Enthusiast</h5>
+                <div class="pb-3">
+                  <a href="resume.html" class="btn aboutme mx-3"><i class="fas fa-user-circle"></i> Resume</a>
+                </div>
+              </div>
+              <div class="social-menu d-none d-md-block">
+                <ul>
+                  <li class="mx-2">
+                    <a class="btn fb" href="https://www.facebook.com/mulyawan.ridhasidi"><i class="fa fa-facebook"></i></a>
+                  </li>
+                  <li class="mx-2">
+                    <a class="btn tw" href="https://twitter.com/ridhasidi"><i class="fa fa-twitter"></i></a>
+                  </li>
+                  <li class="mx-2">
+                    <a class="btn ig" href="https://www.instagram.com/ridhasidi/"><i class="fa fa-instagram"></i></a>
+                  </li>
+                  <li class="mx-2">
+                    <a class="btn mail" href="mailto:ridha.mulyawan@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+      <!-- jumbotron ends here -->
+    </header>
+    <!-- Header ends here -->
 
-        <div class="col-lg-7">
-          <h5>Oh hi everyone! Welcome to my website!</h5>
-          <sup>&ast;Please proceed to <a href="resume.html">Resume page</a> to read my professional resume and experiences.</sup>
-          <p>
-            My name is Ridha and I am really passionate about the environment, the earth system, and GIS. As an avid gamer when I was a child, I was really into computers and video games and I thought I would be a computer engineer when I
-            grew up. However, <a href="https://en.wikipedia.org/wiki/2004_Indian_Ocean_earthquake_and_tsunami">the 2004 Sumatra–Andaman earthquake and tsunami</a> shifted my interest into earth science.
-          </p>
-          <p>
-            Finally, I chose to pursue a degree in Geological Engineering. While pursuing my degree, I was introduced to Geographical Information System (GIS) and remote sensing which combine 2 things that I love: technology and earth
-            science. I was captivated by the power of GIS and remote sensing to analyse geospatial data ever since.
-          </p>
-          <p>
-            I am keen to learn new things, especially languages. Beside my native language — Indonesian, I also can speak English and French fluently. I learned basic Japanese in high school and I am still learning Spanish to this day. I
-            always keep my earphone around, so I can listen to the music anywhere at anytime. Beside hiking, I also love enjoying my Indonesian jasmine tea in the morning while re-watching Eurovision during the weekend.
-          </p>
-          <p>Thank you very much for your time reading this!</p>
+    <!-- WebMap starts here -->
+    <section id="webmap" class="webmap">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 align-self-center mb-3">
+            <a href="index.html#webmap"> <h2 class="text-center fw-bold subtitle">Projects</h2></a>
+          </div>
+          <div class="boxmap row justify-content-evenly p-3 mx-5">
+            <div class="col-lg-6">
+              <div id="mapid" class="boxmap"></div>
+            </div>
+            <div class="col-lg-6 pt-4 ps-lg-2 pt-lg-0">
+              <h4>Which parts of Jakarta have the best coverage of services and amenities?</h4>
+              <p>
+                It is rather difficult to choose where the best part of the town to live in or to start your own business. Using available geospatial data from
+                <a href="https://jakartasatu.jakarta.go.id/portal/apps/sites/#/public">Jakarta Satu</a>, this map shows you which parts of Jakarta have the highest coverage of services and amenities.
+              </p>
+              <p>
+                Primary parameters for this analysis are the distance from education and healthcare facilities, public transportation coverage (including Commuter Trains, MRT, LRT, and TransJakarta BRT), distance from open green and blue
+                space, and road networks. Average annual temperature from Landsat-8, distance from major rivers to avoid flood risk, and distance from amenities (shopping malls, golf courses, karaoke bars, etc) were also added as
+                complementary parameters.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- About content starts-->
+    <!-- WebMap ends here -->
 
-    <!-- footer starts -->
-    <footer class="fixed-bottom pt-2">
-      <p>Built by <a href="https://twitter.com/ridhasidi">@ridhasidi</a> &copy; 2021</p>
-    </footer>
-    <!-- footer ends -->
+    <!-- Projects starts-->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-lg-4 align-self-center my-3">
+            <a href="index.html#projects"> <h2 class="text-center fw-bold subtitle">More Projects</h2></a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+            <div class="col p-4 pt-md-5">
+              <div class="card h-100">
+                <img src="images/Suitability - Copy.jpg" class="card-img-top" alt="Palangkaraya 2015 Fire" />
+                <div class="card-body">
+                  <h5 class="card-title">Level of Services and Amenities Coverage in Jakarta</h5>
+                  <p class="card-text d-none">Supervised classification on a Landsat-8 image in ArcGIS to detect active fire hotspot and evaluate fire hazard risk around Palangkaraya during 2015 Fire and Haze Crisis.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="index.html#webmap" class="btn btn-warning stretched-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col p-4 pt-md-5">
+              <div class="card h-100">
+                <img src="images/02_08_Aug2020.jpg" class="card-img-top" alt="NO2 in Greater Jakarta" />
+                <div class="card-body">
+                  <h5 class="card-title">The Effect of COVID-19 Pandemic to NO2 in the atmosphere above Greater Jakarta</h5>
+                  <p class="card-text d-none">
+                    Times-series (monthly year-on-year) analysis of the effect of "Large-scale Social Restrictions" (lockdown) during 2020 COVID-19 Pandemic to NO2 vertical column density using images from Sentinel-5P on GEE (Google Earth
+                    Engine)
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="projects.html#project2" class="btn btn-warning stretched-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col p-4 pt-md-5">
+              <div class="card h-100">
+                <img src="images/Hatiya.jpg" class="card-img-top" alt="Damage Assesment 2018 Earthquake" />
+                <div class="card-body">
+                  <h5 class="card-title">Coastal Dynamics of Hatiya Island, Bangladesh</h5>
+                  <p class="card-text d-none">
+                    Using SNAP and ArcGIS to analyze a couple of Sentinel-1 SLC Radar images by using the change/difference in their coherence to evaluate the damage occured around Mataram due to Lombok Earthquake in late July-early August
+                    2018.
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="projects.html#project1" class="btn btn-warning stretched-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col p-4 pt-md-5">
+              <div class="card h-100">
+                <img src="images/LombokEarthquakeDisp.jpg" class="card-img-top" alt="Deformation Lombok Earthquake" />
+                <div class="card-body">
+                  <h5 class="card-title">Ground Deformation and Rapid Damage Assesment due to 2018 Lombok Earthquake</h5>
+                  <p class="card-text d-none">
+                    Using SNAP and ArcGIS to analyze the inferometry of a couple of Sentinel-1 SLC Radar images to evaluate ground deformation in Lombok Island due to a series of shallow earthquakes in late July-early August 2018.
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="#" class="btn btn-warning stretched-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col p-4 pt-md-5">
+              <div class="card h-100">
+                <img src="images/fuego.jpg" class="card-img-top" alt="Palangkaraya 2015 Fire" />
+                <div class="card-body">
+                  <h5 class="card-title">Palangkaraya Fire Hazard Risk during 2015 Haze Crisis</h5>
+                  <p class="card-text d-none">Supervised classification on a Landsat-8 image in ArcGIS to detect active fire hotspot and evaluate fire hazard risk around Palangkaraya during 2015 Fire and Haze Crisis.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="projects.html#project3" class="btn btn-warning stretched-link">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="col p-4 pt-md-5">
+              <div class="card h-100">
+                <img src="images/Electoral Politics Assignment.jpg" class="card-img-top" alt="California Voting Result" />
+                <div class="card-body">
+                  <h5 class="card-title">The Result of 2012 California Referendum on GMO Products</h5>
+                  <p class="card-text d-none">Percentage of people in each county voting for passing the law which legally oblige farmers and producers to label their GMO products in California.</p>
+                </div>
+                <div class="card-footer text-center">
+                  <a href="projects.html#project4" class="btn btn-warning stretched-link">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects ends-->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Skills starts here -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-3 align-self-center mb-3">
+            <a href="index.html#skills"> <h2 class="text-center fw-bold subtitle">Skills</h2></a>
+          </div>
+          <div class="row justify-content-center pt-3 px-5">
+            <div class="row justify-content-evenly row-cols-1 row-cols-md-2">
+              <div class="col p-4 px-lg-5">
+                <div class="card h-100">
+                  <img src="images/Mahakam.jpg" class="card-img-top" alt="Map" />
+                  <h5 class="card-title px-3 pt-3">Remote Sensing and GIS-related skills</h5>
+                  <p class="card-text px-3 pb-3">ArcGIS, QGIS, Google Earth Engine, SNAP</p>
+                </div>
+              </div>
+              <div class="col p-4 px-lg-5">
+                <div class="card h-100">
+                  <img src="images/scrabble.jpg" class="card-img-top" alt="Scrabble" />
+                  <h5 class="card-title px-3 pt-3">Language skills</h5>
+                  <p class="card-text px-3 pb-3">Indonesian, English (IELTS: 7.0), French (DELF B2), Spanish (A1)</p>
+                </div>
+              </div>
+              <div class="col p-4 px-lg-5">
+                <div class="card h-100">
+                  <img src="images/css.jpg" class="card-img-top" alt="CSS codes" />
+                  <h5 class="card-title px-3 pt-3">Web design and development skills</h5>
+                  <p class="card-text px-3 pb-3">HTML, CSS, Framework, Javascript, Leaflet, PHP, SQL</p>
+                </div>
+              </div>
+              <div class="col p-4 px-lg-5">
+                <div class="card h-100">
+                  <img src="images/cpython.jpeg" class="card-img-top" alt="python" />
+                  <h5 class="card-title px-3 pt-3">Programming Skills</h5>
+                  <p class="card-text px-3 pb-3">Python, R, Matlab, Octave</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills ends here -->
+
+    <!-- Contact starts here -->
+    <section id="contact" class="contact">
+      <div class="container text-white contact">
+        <div class="row justify-content-center">
+          <div class="sub col-md-4 col-lg-3 align-self-center mb-3">
+            <a href="index.html#contact"> <h2 class="text-center fw-bold subtitle">Contact Me</h2></a>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-5 col-lg-3 text-center">
+            <div>
+              <img src="images/DSC03632_ed.jpg" class="profile" alt="photo with sunglasses" />
+              <h4>Ridha Sidi Mulyawan</h4>
+              <p>Earth Science and GIS Enthusiast</p>
+            </div>
+            <div class="social-menu">
+              <ul>
+                <li>
+                  <a class="btn fb" href="https://www.facebook.com/mulyawan.ridhasidi"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a class="btn tw" href="https://twitter.com/ridhasidi"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="btn ig" href="https://www.instagram.com/ridhasidi/"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a class="btn mail" href="mailto:ridha.mulyawan@gmail.com"><i class="fa fa-envelope-o"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact form starts here -->
+          <div class="col-md-5 px-5">
+            <form name="form-to-gsheet">
+              <div class="mb-3">
+                <label for="InputName" class="form-label">Full Name</label>
+                <input name="name" type="text" class="form-control" id="InputName" aria-describedby="name" placeholder="Enter your name" required />
+              </div>
+              <div class="mb-3">
+                <label for="InputEmail" class="form-label">Email address</label>
+                <input name="email" type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter your email" required />
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="Message" class="form-label">Message</label>
+                <textarea name="message" class="form-control" id="Message" rows="3" placeholder="Enter your message"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit aboutme">Submit</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
+            </form>
+
+            <br />
+
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+              <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+              </symbol>
+            </svg>
+
+            <div class="alert alert-success alert-dismissible fade show d-none deliv-alert" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:"><use xlink:href="#check-circle-fill" /></svg>
+              Your message has been delivered.
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+          </div>
+          <!-- Contact form ends here -->
+        </div>
+      </div>
+    </section>
+    <!-- Contact ends here -->
+
+    <!-- Footer starts here -->
+    <footer class="pt-3 text-center py-3">Copyright &copy; 2021 ridhasidi | All rights reserved</footer>
+    <!-- Footer ends here -->
+
+    <!-- Leaflet webmap script -->
+    <script type="text/javascript" src="js/jktAccessibility.js"></script>
+    <script type="text/javascript">
+      var mymap = L.map("mapid", { minZoom: 11, maxZoom: 14 });
+
+      mymap.setView([-6.21, 106.83], 11);
+
+      mymap.createPane("labels");
+
+      // This pane is above markers but below popups
+      mymap.getPane("labels").style.zIndex = 650;
+
+      // Layers in this pane are non-interactive and do not obscure mouse/touch events
+      mymap.getPane("labels").style.pointerEvents = "none";
+
+      var cartodbAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+
+      var positron = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png", {
+        attribution: cartodbAttribution,
+      }).addTo(mymap);
+
+      var positronLabels = L.tileLayer("https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png", {
+        attribution: cartodbAttribution,
+        pane: "labels",
+      }).addTo(mymap);
+      // control that shows state info on hover
+      var info = L.control();
+
+      info.onAdd = function (mymap) {
+        this._div = L.DomUtil.create("div", "info");
+        this.update();
+        return this._div;
+      };
+
+      function titleCase(regionName) {
+        var splitStr = regionName.toLowerCase().split(" ");
+        for (var i = 0; i < splitStr.length; i++) {
+          splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+        }
+        return splitStr.join(" ");
+      }
+
+      info.update = function (props) {
+        this._div.innerHTML = "<h5>Service Coverage</h5>" + (props ? "<b>" + titleCase(props.WADMKD) + "</b><br />" + titleCase(props.WADMKK) + "<br />" + props.ACCESSIBIL.italics() : "Hover over a region");
+      };
+
+      info.addTo(mymap);
+
+      // get color depending on population density value
+      function getColor(d) {
+        return d > 24 ? "#006837" : d > 21.5 ? "#31a354" : d > 17 ? "#78c679" : d > 13.5 ? "#addd8e" : "#d9f0a3";
+      }
+
+      function style(feature) {
+        return {
+          weight: 1,
+          opacity: 1,
+          color: "white",
+          dashArray: "3",
+          fillOpacity: 0.8,
+          fillColor: getColor(feature.properties.MEAN),
+        };
+      }
+
+      function highlightFeature(e) {
+        var layer = e.target;
+
+        layer.setStyle({
+          weight: 3,
+          color: "#666",
+          dashArray: "",
+          fillOpacity: 0.7,
+        });
+
+        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+          layer.bringToFront();
+        }
+
+        info.update(layer.feature.properties);
+      }
+
+      var geojson;
+
+      function resetHighlight(e) {
+        geojson.resetStyle(e.target);
+        info.update();
+      }
+
+      function zoomToFeature(e) {
+        mymap.fitBounds(e.target.getBounds());
+      }
+
+      function onEachFeature(feature, layer) {
+        layer.on({
+          mouseover: highlightFeature,
+          mouseout: resetHighlight,
+          click: zoomToFeature,
+        });
+      }
+
+      geojson = L.geoJson(accessClass, {
+        style: style,
+        onEachFeature: onEachFeature,
+      }).addTo(mymap);
+
+      mymap.attributionControl.addAttribution('Land use data &copy; <a href="https://jakartasatu.jakarta.go.id/portal/apps/sites/#/public">Jakarta Satu</a>');
+    </script>
+
+    <!-- input form script -->
+    <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbx98LmWE5nFRwJ9LZMXLvI2TEIgOfVQRiSwSUF6avXrAFM2MhsuXL5-lsg9vrhNskKuxQ/exec";
+      const form = document.forms["form-to-gsheet"];
+
+      const btnSubmit = document.querySelector(".btn-submit");
+      const btnLoading = document.querySelector(".btn-loading");
+      const delivAlert = document.querySelector(".deliv-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // when click submit btn: remove btnSubmit, load btnLoading
+        btnLoading.classList.toggle("d-none");
+        btnSubmit.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            btnLoading.classList.toggle("d-none");
+            btnSubmit.classList.toggle("d-none");
+            delivAlert.classList.toggle("d-none");
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script> -->
   </body>
 </html>

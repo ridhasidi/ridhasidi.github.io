@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+    <!-- Bootstrap JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- my CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- Leaflet script -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css" />
+    <title>Projects — Ridha Sidi Mulyawan</title>
+  </head>
+  <body>
+    <!-- Header starts here -->
+    <header>
+      <!-- nav starts here -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top px-5">
+        <div class="container-fluid align-middle px-0">
+          <a class="navbar-brand pb-0" href="index.html#home">
+            <h1 class="display-6 fs-3 fw-light"><span>ridhasidi</span></h1>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html#webmap">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="resume.html">Resume</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- nav ends here -->
+    </header>
+    <!-- Header ends here -->
+    <!-- WebMap starts here -->
+    <section id="project1" class="project1">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 align-self-center mb-3">
+            <a href="#"> <h2 class="text-center fw-bold subtitle">Coastal Dynamics</h2></a>
+          </div>
+          <div class="boxmap row justify-content-between p-3 mx-5">
+            <div class="col-lg-6">
+              <div id="mapid" class="boxmap"></div>
+            </div>
+            <div class="col-lg-6 pt-4 ps-lg-2 pt-lg-0">
+              <h4>Three Decades of Coastal Dynamics of Hatiya Island, Bangladesh</h4>
+              <p>
+                Hatiya Island is located on the delta of 2 major rivers in South Asia: The Ganges and The Brahmaputra. 
+                Its morphology is affected by the dynamics of the climate: from the sedimentations from both rivers to the abrasion and the rising sea level. 
+                Knowing its dynamics, may lead us to better understand the dominant natural force in the area at any given time.
+              </p>
+              <p>
+                Several Landsat-8, Landsat-7, and Landsat-5 were analyzed for this study. 
+                Calculation of MNDWI (Modified Normalized Difference Water Index) on each Landsat images from Green Bands and SWIR Bands was done to differentiate waterbody and land.
+              </p>
+              <p>Tools: QGIS, Leaflet</p>
+              <div class="text-center text-lg-start"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WebMap ends here -->
+
+    <!-- WebMap starts here -->
+    <section id="project2" class="project2">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-5 align-self-center mb-3">
+            <a href="projects.html#project2"> <h2 class="text-center fw-bold subtitle">Atmosphere Observation</h2></a>
+          </div>
+          <div class="boxmap">
+            <div class="row justify-content-center pt-4 mx-5">
+              <div class="col-lg-10">
+                <h4>The Effect of COVID-19 Pandemic to NO2 in the atmosphere above Greater Jakarta</h4>
+                <p>
+                  Times-series (monthly year-on-year) analysis of the effect of "Large-scale Social Restrictions" (lockdown) during 2020 COVID-19 Pandemic to NO2 vertical column density using images from Sentinel-5P on GEE (Google Earth Engine)
+                </p>
+                <p>Tools: Google Earth Engine (JavaScript API), QGIS, Leaflet</p>
+                
+              <!-- <div class="chart-container text-center">
+                <img src="images/ee-chart_NO2.jpg" alt="NO2 Monthly Chart" class="chart">
+              </div> -->
+              </div>
+            </div>
+            <div class="row justify-content-evenly p-3 mx-5">
+              <div class="col-lg-6 col-xl-5 pb-3">
+                <div><h6 class="text-center">2019</h6></div>
+                <div id="map1" class="boxmap">
+                </div>
+              </div>
+              <div class="col-lg-6 col-xl-5 pb-3">
+                <div><h6 class="text-center">2020</h6></div>
+                  <div id="map2" class="boxmap"></div>
+              </div>
+              <div class="col-lg-10 text-center">
+                <div class="text-center py-4"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- WebMap ends here -->
+
+    <!-- WebMap starts here -->
+    <section id="project3" class="project3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 align-self-center mb-3">
+            <a href="projects.html#project3"> <h2 class="text-center fw-bold subtitle">Wildfire Hazard</h2></a>
+          </div>
+          <div class="boxmap row justify-content-evenly p-3 mx-5">
+            <div class="col-lg-6">
+              <div id="map3" class="boxmap"></div>
+            </div>
+            <div class="col-lg-6 pt-4 ps-lg-2 pt-lg-0">
+              <h4>Palangkaraya Fire Hazard Risk during 2015 Haze Crisis</h4>
+              <p>Due to the El Niño phenomenon, 2015 was one of the most driest year in Indonesia. 
+                It also led to the most severe wildfire and haze crisis in recent years. 
+                The crisis started at late June  and reached its peak on late October. 
+                It ended only because of the wet moonson season which started on early to mid November.</p>
+              <p>Landsat-8 image captured on late October (at the peak of the crisis) around Palangkaraya was choosen as the raw data for this study. 
+                Land use data and the extent of protected area downloaded from Geospasial untuk Negeri were also being used. 
+                We classified the choosen Landsat-8 image by supervised classification method on ArcGIS to detect active fire hotspot. 
+                The result then analyzed with other geospatial data to evaluate fire hazard risk around Palangkaraya during 2015 Fire and Haze Crisis.
+              </p>
+              <p>Tools: ArcGIS, Leaflet, Python</p>
+              <div class="text-center text-lg-start"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- WebMap ends here -->
+
+    <!-- WebMap starts here -->
+    <section id="project4" class="project4">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-4 align-self-center mb-3">
+            <a href="projects.html#project4"> <h2 class="text-center fw-bold subtitle">Voting Result</h2></a>
+          </div>
+          <div class="boxmap row justify-content-evenly p-3 mx-5">
+            <div class="col-lg-6 pt-4 ps-lg-2 pt-lg-0">
+              <h4>The Result of 2012 California Referendum on GMO Products</h4>
+              <p>
+                Percentage of people in each county voting for passing the law which legally oblige farmers and producers to label their GMO products in California.
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div id="map4" class="boxmap"></div>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- WebMap ends here -->
+
+    <!-- Footer starts here -->
+    <footer class="pt-3 text-center py-3">Copyright &copy; 2021 ridhasidi | All rights reserved</footer>
+    <!-- Footer ends here -->
+
+    <!-- Leaflet map1 starts -->
+    <script src="js/L.LatLng.UTM.js"></script>
+    <script src="js/hatiya2000.js"></script>
+    <script src="js/hatiya1990.js"></script>
+    <script src="js/hatiya1995.js"></script>
+    <script src="js/hatiya2005.js"></script>
+    <script src="js/hatiya2010.js"></script>
+    <script src="js/hatiya2015.js"></script>
+    <script src="js/hatiya2019.js"></script>
+    <script type="text/javascript">
+
+    var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	      attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    });
+
+    var Stamen = L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}{r}.{ext}', {
+      	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      	subdomains: 'abcd',
+      	minZoom: 0,
+      	maxZoom: 20,
+      	ext: 'png'
+    });
+
+    var mapHatiya = L.map('mapid', {
+		center: [22.2427157332575, 91.08285773877618],
+		zoom: 10,
+		layers: [Esri_WorldImagery],
+        minZoom: 10, 
+        maxZoom: 11
+	  });
+
+    function onEachFeature(feature, layer) {
+		var popupContent = "<p>Total area of Hatiya Island in "+ feature.properties.Year + ": " + ((feature.properties.Area)/1000000).toFixed(2) + "km<sup>2</sup>";
+		layer.bindPopup(popupContent);
+	  }
+
+    var h2019 = L.geoJSON(hat2019, {onEachFeature: onEachFeature, color: '#beaed4', fillColor: '#beaed4', fillOpacity: 0.5}).addTo(mapHatiya);
+    var h2015 = L.geoJSON(hat2015, {onEachFeature: onEachFeature, color: '#1f78b4', fillColor: '#1f78b4', fillOpacity: 0.5}).addTo(mapHatiya);
+    var h2010 = L.geoJson(hat2010, {onEachFeature: onEachFeature, color: '#b2df8a', fillColor: '#b2df8a', fillOpacity: 0.5}).addTo(mapHatiya);
+    var h2005 = L.geoJson(hat2005, {onEachFeature: onEachFeature, color: '#33a02c', fillColor: '#33a02c', fillOpacity: 0.5}).addTo(mapHatiya);
+    var h2000 = L.geoJson(hat2000, {onEachFeature: onEachFeature, color: '#fb9a99', fillColor: '#fb9a99', fillOpacity: 0.5}).addTo(mapHatiya);
+    var h1995 = L.geoJson(hat1995, {onEachFeature: onEachFeature, color: '#e31a1c', fillColor: '#e31a1c', fillOpacity: 0.5}).addTo(mapHatiya);
+    var h1990 = L.geoJson(hat1990, {onEachFeature: onEachFeature, color: '#fdbf6f', fillColor: '#fdbf6f', fillOpacity: 0.5}).addTo(mapHatiya);
+
+    var baseMap = {"Stamen": Stamen, "ESRI Imagery": Esri_WorldImagery};
+    var overlayMaps = {"1990": h1990, "1995": h1995, "2000": h2000, "2005": h2005, "2010": h2010, "2015": h2015, "2019": h2019};
+
+    L.control.layers(baseMap, overlayMaps).addTo(mapHatiya);
+    mapHatiya.attributionControl.addAttribution('Landsat images from <a href="https://www.usgs.gov/">USGS</a>');
+
+    </script>
+    <!-- Leaflet map1 ends -->
+
+    <!-- Leaflet map2 starts -->
+    <script src="js/jadetabek.js"></script>
+    <script type="text/javascript">
+    var mymapN = L.map("map1", { minZoom: 10, maxZoom: 11 });
+    mymapN.setView([-6.26, 106.798], 10);
+
+    mymapN.createPane('labels');
+
+    // This pane is above markers but below popups
+    mymapN.getPane('labels').style.zIndex = 650;
+
+    // Layers in this pane are non-interactive and do not obscure mouse/touch events
+    mymapN.getPane('labels').style.pointerEvents = 'none';
+
+    var cartodbAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+
+    var positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+      attribution: cartodbAttribution
+    }).addTo(mymapN);
+
+    var positronLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png', {
+      attribution: cartodbAttribution,
+      pane: 'labels'
+    }).addTo(mymapN);
+    var bounds = L.latLngBounds([[-6.028027629096863, 106.5281938709491], [-6.478516073403845, 107.06927053110535]]);
+    // L.rectangle(bounds).addTo(mymapN);
+    var video = L.videoOverlay( 'vid/NO2_2019.mp4', bounds, {
+      opacity: 0.5
+    }).addTo(mymapN);
+    var border =  L.geoJson(jadebek, {
+          weight: 0.8,
+          opacity: 1,
+          color: "white",
+          dashArray: "2",
+          fillOpacity: 0,
+          fillColor: "white"
+      }).addTo(mymapN);
+
+    mymapN.attributionControl.addAttribution('Sentinel-5P images from <a href="https://sentinels.copernicus.eu/web/sentinel/home">Copernicus ESA</a>');
+    </script>
+    <script type="text/javascript">
+
+    var mapN = L.map("map2", { minZoom: 10, maxZoom: 11 });
+    
+    mapN.setView([-6.26, 106.798], 10);
+
+    mapN.createPane('labels');
+
+    // This pane is above markers but below popups
+    mapN.getPane('labels').style.zIndex = 650;
+
+    // Layers in this pane are non-interactive and do not obscure mouse/touch events
+    mapN.getPane('labels').style.pointerEvents = 'none';
+
+    var cartodbAttribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+
+    var positron = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
+      attribution: cartodbAttribution
+    }).addTo(mapN);
+
+    var positronLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png', {
+      attribution: cartodbAttribution,
+      pane: 'labels'
+    }).addTo(mapN);
+
+    var bounds = L.latLngBounds([[-6.028027629096863, 106.5281938709491], [-6.478516073403845, 107.06927053110535]]);
+    // L.rectangle(bounds).addTo(mapN);
+    var videoOverlay = L.videoOverlay( 'vid/NO2_2020.mp4', bounds, {
+      opacity: 0.5
+    }).addTo(mapN);
+
+    var border =  L.geoJson(jadebek, {
+          weight: 0.8,
+          opacity: 1,
+          color: "white",
+          dashArray: "2",
+          fillOpacity: 0,
+          fillColor: "white"
+      }).addTo(mapN);
+
+    mapN.attributionControl.addAttribution('Sentinel-5P images from <a href="https://sentinels.copernicus.eu/web/sentinel/home">Copernicus ESA</a>');
+
+    </script>
+    <!-- Leaflet map2 ends -->
+
+    <!-- Leaflet map3 starts -->
+    <script src="js/activeFire.js"></script>
+    <script src="js/burntArea.js"></script>
+    <script src="js/riskZonation.js"></script>
+    <script src="js/waterBody.js"></script>
+    <script type="text/javascript">
+        // var mymap = L.map("map3", { minZoom: 10, maxZoom: 11 });
+        var mapBox = L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoicmlkaGFzaWRpIiwiYSI6ImNrcWhxaGtudzA0a2MyeG1zajNsd2Vod2sifQ.uaQryFz4eiT3PtcwWaFSiA", {
+        maxZoom: 18,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' + 'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: "mapbox/streets-v11",
+        tileSize: 512,
+        zoomOffset: -1,
+        });
+
+        var mapPal = L.map('map3', {center: [-2.3, 113.83876087048056], zoom: 11, layers: [mapBox], minZoom: 10, maxZoom: 13});
+        
+        function getColor(d) {
+        return d > 4 ? "#bd0026" : d > 3 ? "#f03b20" : d > 2 ? "#fd8d3c" : d > 1 ? "#fecc5c" : "#ffffb2";
+        }
+
+        function styleRisk(feature) {
+        return {
+          weight: 0.5,
+          opacity: 0.7,
+          color: getColor(feature.properties.MEAN),
+          fillOpacity: 0.7,
+          fillColor: getColor(feature.properties.MEAN)
+          };
+        }
+
+        function pickColor(d) {
+        return d == "Burn scar" ? "#969696" : d == "Burned protected area" ? "#636363" : "#252525" ;
+        }
+
+        function styleBurn(feature) {
+        return {
+          weight: 0.5,
+          opacity: 0.7,
+          color: pickColor(feature.properties.Categories),
+          fillOpacity: 0.7,
+          fillColor: pickColor(feature.properties.Categories)
+          };
+        }
+
+        function responseA(feature, layer) {
+          var popupContent = feature.properties.Categories +" with total area of " + feature.properties.areacalc + "km<sup>2</sup>" ;
+            layer.bindPopup(popupContent);
+	      }
+
+        function responseB(feature, layer) {
+          var popupContent = "This " + feature.properties.REMARK.toLowerCase() +" area has " + feature.properties.Categories.toLowerCase() + " of fire hazard" ;
+            layer.bindPopup(popupContent);
+	      }
+
+        function responseC(feature, layer) {
+          var popupContent = "Danger! Active fire!" ;
+            layer.bindPopup(popupContent);
+	      }
+
+        
+        var zone = L.geoJSON(riskZone, {onEachFeature: responseB, style: styleRisk}).addTo(mapPal);
+        var burnt = L.geoJSON(burntArea, {onEachFeature: responseA, style: styleBurn}).addTo(mapPal);
+        var fire = L.geoJSON(activeFire, {onEachFeature: responseC, color: '#ff0000', weight: 0.5, fillColor: '#ff0000', fillOpacity: 0.9}).addTo(mapPal);
+        var water = L.geoJSON(waterBody, {color: '#40acff', weight: 0.5, fillColor: '#40acff', fillOpacity: 0.9}).addTo(mapPal);
+        var petaDasar = {"Mapbox": mapBox};
+        var fireLayers = {"Active Fire":fire, "Risk Zonation":zone, "Rivers":water, "Burnt Area":burnt};
+        L.control.layers(petaDasar, fireLayers).addTo(mapPal);
+    </script>
+    <!-- Leaflet map3 ends -->
+
+    <!-- Leaflet map4 starts -->
+    <script src="js/countiesVoting.js"></script>
+    <script type="text/javascript">
+      var mapCal = L.map("map4", { minZoom: 5, maxZoom: 10 });
+
+      mapCal.setView([37.5, -119], 6);
+
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+      }).addTo(mapCal);
+
+      // control that shows state info on hover
+      var info = L.control();
+
+      info.onAdd = function (mapCal) {
+        this._div = L.DomUtil.create("div", "info");
+        this.update();
+        return this._div;
+      };
+
+      function titleCase(regionName) {
+        var splitStr = regionName.toLowerCase().split(" ");
+        for (var i = 0; i < splitStr.length; i++) {
+          splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+        }
+        return splitStr.join(" ");
+      }
+
+      info.update = function (props) {
+        this._div.innerHTML = "<h5>Voting Result</h5>" 
+        + (props ? "Counties: "+ titleCase(props.NAME_CAP) + "<br/> <b>" 
+        + "'Yes' votes: " + (((props.proposition_37_yes_votes)/(props.total_votes))*100).toFixed(2) +"%</b>" : "Hover over a county");
+      };
+
+      info.addTo(mapCal);
+
+      // get color depending on population density value
+      function getColor(d) {
+        return d > 53 ? "#006837" : d > 45 ? "#31a354" : d > 38 ? "#78c679" : d > 32 ? "#addd8e" : "#d9f0a3";
+      }
+
+      // function calcPer(feature){
+      //   return ((feature.properties.proposition_37_votes_yes)/(feature.properties.total_votes))*100
+      // }
+
+      function style(feature) {
+        return {
+          weight: 1,
+          opacity: 1,
+          color: "white",
+          dashArray: "3",
+          fillOpacity: 0.8,
+          fillColor: getColor((feature.properties.proposition_37_yes_votes/feature.properties.total_votes)*100),
+        };
+      }
+
+      function highlightFeature(e) {
+        var layer = e.target;
+
+        layer.setStyle({
+          weight: 3,
+          color: "#666",
+          dashArray: "",
+          fillOpacity: 0.7,
+        });
+
+        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+          layer.bringToFront();
+        }
+
+        info.update(layer.feature.properties);
+      }
+
+      var geojson;
+
+      function resetHighlight(e) {
+        geojson.resetStyle(e.target);
+        info.update();
+      }
+
+      function zoomToFeature(e) {
+        mapCal.fitBounds(e.target.getBounds());
+      }
+
+      function onEachFeature(feature, layer) {
+        layer.on({
+          mouseover: highlightFeature,
+          mouseout: resetHighlight,
+          click: zoomToFeature,
+        });
+      }
+
+      geojson = L.geoJson(votingData, {
+        style: style,
+        onEachFeature: onEachFeature,
+      }).addTo(mapCal);
+    </script>
+    <!-- Leaflet map4 ends -->
+  </body>
+</html>
