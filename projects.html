@@ -171,11 +171,12 @@
               <h4>The Result of 2012 California Referendum on GMO Products</h4>
               <p>Percentage of people in each county voting for passing the law which legally oblige farmers and producers to label their GMO products in California.</p>
               <p>Tools: ArcGIS, Leaflet</p>
-              <div class="text-center text-lg-start"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div>
+              <div class="text-start d-none d-md-block"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div>
             </div>
             <div class="col-lg-6">
               <div id="map4" class="boxmap"></div>
             </div>
+            <div class="text-center d-lock d-md-none pt-3"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div>
           </div>
         </div>
       </div>
@@ -222,12 +223,12 @@
       }
 
       var h2019 = L.geoJSON(hat2019, { onEachFeature: onEachFeature, color: "#beaed4", fillColor: "#beaed4", fillOpacity: 0.5 }).addTo(mapHatiya);
-      var h2015 = L.geoJSON(hat2015, { onEachFeature: onEachFeature, color: "#1f78b4", fillColor: "#1f78b4", fillOpacity: 0.5 }).addTo(mapHatiya);
-      var h2010 = L.geoJson(hat2010, { onEachFeature: onEachFeature, color: "#b2df8a", fillColor: "#b2df8a", fillOpacity: 0.5 }).addTo(mapHatiya);
-      var h2005 = L.geoJson(hat2005, { onEachFeature: onEachFeature, color: "#33a02c", fillColor: "#33a02c", fillOpacity: 0.5 }).addTo(mapHatiya);
-      var h2000 = L.geoJson(hat2000, { onEachFeature: onEachFeature, color: "#fb9a99", fillColor: "#fb9a99", fillOpacity: 0.5 }).addTo(mapHatiya);
-      var h1995 = L.geoJson(hat1995, { onEachFeature: onEachFeature, color: "#e31a1c", fillColor: "#e31a1c", fillOpacity: 0.5 }).addTo(mapHatiya);
-      var h1990 = L.geoJson(hat1990, { onEachFeature: onEachFeature, color: "#fdbf6f", fillColor: "#fdbf6f", fillOpacity: 0.5 }).addTo(mapHatiya);
+      var h2015 = L.geoJSON(hat2015, { onEachFeature: onEachFeature, color: "#1f78b4", fillColor: "#1f78b4", fillOpacity: 0.5 });
+      var h2010 = L.geoJson(hat2010, { onEachFeature: onEachFeature, color: "#b2df8a", fillColor: "#b2df8a", fillOpacity: 0.5 });
+      var h2005 = L.geoJson(hat2005, { onEachFeature: onEachFeature, color: "#33a02c", fillColor: "#33a02c", fillOpacity: 0.5 });
+      var h2000 = L.geoJson(hat2000, { onEachFeature: onEachFeature, color: "#fb9a99", fillColor: "#fb9a99", fillOpacity: 0.5 });
+      var h1995 = L.geoJson(hat1995, { onEachFeature: onEachFeature, color: "#e31a1c", fillColor: "#e31a1c", fillOpacity: 0.5 });
+      var h1990 = L.geoJson(hat1990, { onEachFeature: onEachFeature, color: "#fdbf6f", fillColor: "#fdbf6f", fillOpacity: 0.5 });
 
       var baseMap = { Stamen: Stamen, "ESRI Imagery": Esri_WorldImagery };
       var overlayMaps = { 1990: h1990, 1995: h1995, 2000: h2000, 2005: h2005, 2010: h2010, 2015: h2015, 2019: h2019 };
