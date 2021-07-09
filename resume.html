@@ -437,7 +437,11 @@
 
           <!-- Contact form starts here -->
           <div class="col-md-5 px-5">
-            <form name="form-to-gsheet">
+            <form name="form-to-gsheet" action="https://formsubmit.co/ridha.mulyawan@gmail.com" method="POST">
+              <div>
+                <input type="hidden" name="_subject" value="New message from website!" />
+                <input type="hidden" name="_captcha" value="false" />
+              </div>
               <div class="mb-3">
                 <label for="InputName" class="form-label">Full Name</label>
                 <input name="name" type="text" class="form-control" id="InputName" placeholder="Enter your name" required />

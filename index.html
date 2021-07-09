@@ -306,19 +306,23 @@
 
           <!-- Contact form starts here -->
           <div class="col-md-5 px-5">
-            <form name="form-to-gsheet">
+            <form name="form-to-gsheet" action="https://formsubmit.co/ridha.mulyawan@gmail.com" method="POST">
+              <div>
+                <input type="hidden" name="_subject" value="New message from website!" />
+                <input type="hidden" name="_captcha" value="false" />
+              </div>
               <div class="mb-3">
                 <label for="InputName" class="form-label">Full Name</label>
-                <input name="name" type="text" class="form-control" id="InputName" placeholder="Enter your name" required />
+                <input type="text" name="name" class="form-control" id="InputName" placeholder="Enter your name" required />
               </div>
               <div class="mb-3">
                 <label for="InputEmail" class="form-label">Email address</label>
-                <input name="email" type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter your email" required />
+                <input type="email" name="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter your email" required />
                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
               </div>
               <div class="mb-3">
                 <label for="Message" class="form-label">Message</label>
-                <textarea name="message" class="form-control" id="Message" rows="3" placeholder="Enter your message"></textarea>
+                <textarea name="message" class="form-control" id="Message" rows="3" placeholder="Enter your message" required></textarea>
               </div>
 
               <button type="submit" class="btn btn-submit aboutme">Submit</button>
@@ -461,33 +465,5 @@
     </script>
 
     <!-- input form script -->
-    <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
-    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
-    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
-
-    <script>
-      const scriptURL = "https://script.google.com/macros/s/AKfycbx98LmWE5nFRwJ9LZMXLvI2TEIgOfVQRiSwSUF6avXrAFM2MhsuXL5-lsg9vrhNskKuxQ/exec";
-      const form = document.forms["form-to-gsheet"];
-
-      const btnSubmit = document.querySelector(".btn-submit");
-      const btnLoading = document.querySelector(".btn-loading");
-      const delivAlert = document.querySelector(".deliv-alert");
-
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        // when click submit btn: remove btnSubmit, load btnLoading
-        btnLoading.classList.toggle("d-none");
-        btnSubmit.classList.toggle("d-none");
-        fetch(scriptURL, { method: "POST", body: new FormData(form) })
-          .then((response) => {
-            btnLoading.classList.toggle("d-none");
-            btnSubmit.classList.toggle("d-none");
-            delivAlert.classList.toggle("d-none");
-            form.reset();
-            console.log("Success!", response);
-          })
-          .catch((error) => console.error("Error!", error.message));
-      });
-    </script> -->
   </body>
 </html>
