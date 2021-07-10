@@ -48,7 +48,7 @@
                 <a class="nav-link" href="resume.html">Resume</a>
               </li>
               <li>
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="index.html#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@
                 Several Landsat-8, Landsat-7, and Landsat-5 were analyzed for this study. Calculation of MNDWI (Modified Normalized Difference Water Index) on each Landsat images from Green Bands and SWIR Bands was done to differentiate
                 waterbody and land.
               </p>
-              <p>Tools: QGIS, Leaflet</p>
+              <p>Tools: QGIS, Leaflet, Chart.js</p>
             </div>
             <div class="row justify-content-center"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div>
           </div>
@@ -105,7 +105,7 @@
                   Times-series (monthly year-on-year) analysis of the effect of "Large-scale Social Restrictions" (lockdown) during 2020 COVID-19 Pandemic to NO2 vertical column density using images from Sentinel-5P on GEE (Google Earth
                   Engine)
                 </p>
-                <p>Tools: Google Earth Engine (JavaScript API), QGIS, Leaflet</p>
+                <p>Tools: Google Earth Engine (JavaScript API), QGIS, Leaflet, D3.js, Chart.js</p>
                 <div class="chartBox-fp justify-content-center">
                   <canvas id="myChart"></canvas>
                 </div>
@@ -152,20 +152,20 @@
                 also being used. We classified the choosen Landsat-8 image by supervised classification method on ArcGIS to detect active fire hotspot. The result then analyzed with other geospatial data to evaluate fire hazard risk around
                 Palangkaraya during 2015 Fire and Haze Crisis.
               </p>
-              <p>Tools: ArcGIS, Leaflet, Python</p>
+              <p>Tools: ArcGIS, Leaflet, Python, Chart.js</p>
             </div>
             <div class="row justify-content-center pt-lg-3 pb-3">
-              <div class="col-lg-6">
-                <div class="chartBox-pie justify-content-center">
+              <div class="col-lg-6 justify-content-center justify-content-lg-end mb-3">
+                <div class="chartBox-pie">
                   <canvas id="chartFireOne"></canvas>
                 </div>
               </div>
-              <div class="col-lg-6">
-                <div class="chartBox-pie justify-content-center">
+              <div class="col-lg-6 justify-content-center justify-content-lg-start mb-3">
+                <div class="chartBox-pie">
                   <canvas id="chartFireTwo"></canvas>
                 </div>
               </div>
-              <div class="text-center"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div>
+              <div class="text-center py-3"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div>
             </div>
           </div>
         </div>
@@ -184,8 +184,8 @@
             <div class="col-lg-6 pt-4 ps-lg-2 pt-lg-0">
               <h4>The Result of 2012 California Referendum on GMO Products</h4>
               <p>Percentage of people in each county voting for passing the law which legally oblige farmers and producers to label their GMO products in California.</p>
-              <p>Tools: ArcGIS, Leaflet</p>
-              <div class="chartBox-pie justify-content-center pb-4">
+              <p>Tools: ArcGIS, Leaflet, Chart.js</p>
+              <div class="chartBox-pie justify-content-center pb-4 pb-lg-0">
                 <canvas id="chartCalOne"></canvas>
               </div>
             </div>
@@ -741,12 +741,12 @@
         labels: counties,
         datasets: [
           {
-            label: "Dataset 1",
+            label: "Yes Votes",
             data: yesVotes,
             backgroundColor: "#98eb34",
           },
           {
-            label: "Dataset 2",
+            label: "Other Votes",
             data: totalVotes,
             backgroundColor: "#ffae00",
           },

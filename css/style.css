@@ -237,7 +237,7 @@ h5.card-title {
   margin-right: auto;
 }
 .chartBox-cal {
-  width: 80%;
+  width: 100%;
   height: 22.5rem;
 }
 @media (min-width: 768px) {
