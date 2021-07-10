@@ -18,7 +18,7 @@
   --clr-bright-sec: #dbdbdb;
   --clr-accent: #ff9900;
   --clr-accent-sec: #ffde49;
-  --clr-accent-darker: #ce022e;
+  --clr-accent-darker: #ff0040;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -42,7 +42,8 @@ nav div a h1 {
   font-family: Lexend deca;
 }
 nav div a h2 span,
-h1.display-md-5 span {
+h1.display-md-5 span,
+h1.display-6 span {
   color: #ff9900;
 }
 .navbar ul.navbar-nav a {
@@ -141,8 +142,9 @@ a h2.subtitle::after {
   transition: 0.5s ease-out;
 }
 a h2.subtitle:hover {
-  letter-spacing: 0.0625rem;
+  /* letter-spacing: 0.0625rem; */
   transform: scaleX(1.02);
+  transition: 0.5s;
 }
 
 .contact .col-md-4 a h2 {
@@ -150,7 +152,7 @@ a h2.subtitle:hover {
   color: var(--clr-accent);
 }
 .contact .col-md-4 a h2:hover {
-  letter-spacing: 0.0625rem;
+  /* letter-spacing: 0.0625rem; */
   transform: scaleX(1.02);
   transition: 0.5s;
 }
@@ -218,6 +220,43 @@ h5.card-title {
   float: left;
   margin-right: 0.5rem;
   opacity: 0.7;
+}
+
+/* Chart starts here */
+.chartBox,
+.chartBox-fp {
+  width: 100%;
+  height: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chartBox-pie {
+  width: 100%;
+  height: 19rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.chartBox-cal {
+  width: 80%;
+  height: 22.5rem;
+}
+@media (min-width: 768px) {
+  .chartBox-fp {
+    width: 60%;
+    height: 15rem;
+  }
+  .chartBox {
+    width: 80%;
+    height: 12rem;
+  }
+  .chartBox-cal {
+    width: 80%;
+    height: 22.5rem;
+  }
+  .chartBox-pie {
+    width: 80%;
+    height: 20rem;
+  }
 }
 
 /* Footer */
@@ -507,6 +546,7 @@ details[open] summary ~ * {
     content: none;
   }
 }
+
 /* .chart {
   max-width: 700px;
   size: 100%;
