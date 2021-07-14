@@ -125,6 +125,12 @@
               </p>
               <p>Tools: ArcGIS, Google Earth Engine, Leaflet</p>
             </div>
+            <div class="row justify-content-center pt-lg-3 pb-3">
+              <div class="chartBox-jkt justify-content-center">
+                <canvas id="chartJktOne"></canvas>
+              </div>
+              <div class="text-center py-3"><a href="index.html#contact" class="btn aboutme">Contact Me</a></div>
+            </div>
           </div>
         </div>
       </div>
@@ -357,8 +363,123 @@
     <footer class="pt-3 text-center py-3">Copyright &copy; 2021 ridhasidi | All rights reserved</footer>
     <!-- Footer ends here -->
 
-    <!-- Leaflet webmap script -->
+    <!-- Chart Js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Data -->
+
     <script src="js/jktAccessibility.js"></script>
+    <!-- Chart -->
+    <script>
+      var v = accessClass.features.map(function (e) {
+        const x = e.properties;
+        return x;
+      });
+      const labels = accessClass.features.map(function (e) {
+        const x = e.properties;
+        const y = x.WADMKK;
+        return y;
+      });
+      let label = [...new Set(labels)];
+
+      const highTim = v.filter((x) => x.ACCESSIBIL === "High coverage").filter((x) => x.WADMKK === "JAKARTA TIMUR").length;
+      const highUt = v.filter((x) => x.ACCESSIBIL === "High coverage").filter((x) => x.WADMKK === "JAKARTA UTARA").length;
+      const highPus = v.filter((x) => x.ACCESSIBIL === "High coverage").filter((x) => x.WADMKK === "JAKARTA PUSAT").length;
+      const highSel = v.filter((x) => x.ACCESSIBIL === "High coverage").filter((x) => x.WADMKK === "JAKARTA SELATAN").length;
+      const highBar = v.filter((x) => x.ACCESSIBIL === "High coverage").filter((x) => x.WADMKK === "JAKARTA BARAT").length;
+      const high = [highTim, highUt, highPus, highSel, highBar];
+
+      const midHighTim = v.filter((x) => x.ACCESSIBIL === "Mid-high coverage").filter((x) => x.WADMKK === "JAKARTA TIMUR").length;
+      const midHighUt = v.filter((x) => x.ACCESSIBIL === "Mid-high coverage").filter((x) => x.WADMKK === "JAKARTA UTARA").length;
+      const midHighPus = v.filter((x) => x.ACCESSIBIL === "Mid-high coverage").filter((x) => x.WADMKK === "JAKARTA PUSAT").length;
+      const midHighSel = v.filter((x) => x.ACCESSIBIL === "Mid-high coverage").filter((x) => x.WADMKK === "JAKARTA SELATAN").length;
+      const midHighBar = v.filter((x) => x.ACCESSIBIL === "Mid-high coverage").filter((x) => x.WADMKK === "JAKARTA BARAT").length;
+      const midHigh = [midHighTim, midHighUt, midHighPus, midHighSel, midHighBar];
+
+      const modTim = v.filter((x) => x.ACCESSIBIL === "Moderate coverage").filter((x) => x.WADMKK === "JAKARTA TIMUR").length;
+      const modUt = v.filter((x) => x.ACCESSIBIL === "Moderate coverage").filter((x) => x.WADMKK === "JAKARTA UTARA").length;
+      const modPus = v.filter((x) => x.ACCESSIBIL === "Moderate coverage").filter((x) => x.WADMKK === "JAKARTA PUSAT").length;
+      const modSel = v.filter((x) => x.ACCESSIBIL === "Moderate coverage").filter((x) => x.WADMKK === "JAKARTA SELATAN").length;
+      const modBar = v.filter((x) => x.ACCESSIBIL === "Moderate coverage").filter((x) => x.WADMKK === "JAKARTA BARAT").length;
+      const mod = [modTim, modUt, modPus, modSel, modBar];
+
+      const midLowTim = v.filter((x) => x.ACCESSIBIL === "Mid-low coverage").filter((x) => x.WADMKK === "JAKARTA TIMUR").length;
+      const midLowUt = v.filter((x) => x.ACCESSIBIL === "Mid-low coverage").filter((x) => x.WADMKK === "JAKARTA UTARA").length;
+      const midLowPus = v.filter((x) => x.ACCESSIBIL === "Mid-low coverage").filter((x) => x.WADMKK === "JAKARTA PUSAT").length;
+      const midLowSel = v.filter((x) => x.ACCESSIBIL === "Mid-low coverage").filter((x) => x.WADMKK === "JAKARTA SELATAN").length;
+      const midLowBar = v.filter((x) => x.ACCESSIBIL === "Mid-low coverage").filter((x) => x.WADMKK === "JAKARTA BARAT").length;
+      const midLow = [midLowTim, midLowUt, midLowPus, midLowSel, midLowBar];
+
+      const lowTim = v.filter((x) => x.ACCESSIBIL === "Low coverage").filter((x) => x.WADMKK === "JAKARTA TIMUR").length;
+      const lowUt = v.filter((x) => x.ACCESSIBIL === "Low coverage").filter((x) => x.WADMKK === "JAKARTA UTARA").length;
+      const lowPus = v.filter((x) => x.ACCESSIBIL === "Low coverage").filter((x) => x.WADMKK === "JAKARTA PUSAT").length;
+      const lowSel = v.filter((x) => x.ACCESSIBIL === "Low coverage").filter((x) => x.WADMKK === "JAKARTA SELATAN").length;
+      const lowBar = v.filter((x) => x.ACCESSIBIL === "Low coverage").filter((x) => x.WADMKK === "JAKARTA BARAT").length;
+      const low = [lowTim, lowUt, lowPus, lowSel, lowBar];
+
+      const dataJktOne = {
+        labels: label,
+        datasets: [
+          {
+            label: "High coverage",
+            data: high,
+            borderColor: "#006837",
+            backgroundColor: "#006837",
+          },
+          {
+            label: "Mid-high coverage",
+            data: midHigh,
+            borderColor: "#31a354",
+            backgroundColor: "#31a354",
+          },
+          {
+            label: "Moderate coverage",
+            data: [4, 5, 6, 4, 3],
+            borderColor: "#78c679",
+            backgroundColor: "#78c679",
+          },
+          {
+            label: "Mid-low coverage",
+            data: midLow,
+            borderColor: "#addd8e",
+            backgroundColor: "#addd8e",
+          },
+          {
+            label: "Low coverage",
+            data: low,
+            borderColor: "#d9f0a3",
+            backgroundColor: "#d9f0a3",
+          },
+        ],
+      };
+
+      const configJktOne = {
+        type: "bar",
+        data: dataJktOne,
+        options: {
+          plugins: {
+            legend: {
+              position: "bottom",
+            },
+            title: {
+              display: true,
+              text: "Number of region in each category for each City (Kotamadya))",
+            },
+          },
+          responsive: true,
+          maintainAspectRatio: false,
+          scales: {
+            x: {
+              stacked: true,
+            },
+            y: {
+              stacked: true,
+            },
+          },
+        },
+      };
+      var chartCal = new Chart(document.getElementById("chartJktOne"), configJktOne);
+    </script>
+    <!-- Leaflet webmap script -->
     <script>
       var mymap = L.map("mapid", { minZoom: 11, maxZoom: 14 });
 

@@ -253,6 +253,10 @@ h5.card-title {
     width: 80%;
     height: 22.5rem;
   }
+  .chartBox-jkt {
+    width: 65%;
+    height: 22.5rem;
+  }
   .chartBox-pie {
     width: 80%;
     height: 20rem;
