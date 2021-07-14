@@ -301,7 +301,13 @@
 
       function onEachFeature(feature, layer) {
         var popupContent = "<p>Total area of Hatiya Island in " + feature.properties.Year + ": " + (feature.properties.Area / 1000000).toFixed(2) + "km<sup>2</sup>";
-        layer.bindPopup(popupContent);
+        layer.bindPopup(popupContent, { closeButton: false, offset: L.point(0, -20) });
+        layer.on("mouseover", function () {
+          layer.openPopup();
+        });
+        layer.on("mouseout", function () {
+          layer.closePopup();
+        });
       }
 
       var h2019 = L.geoJSON(hat2019, { onEachFeature: onEachFeature, color: "#beaed4", fillColor: "#beaed4", fillOpacity: 0.5 }).addTo(mapHatiya);
